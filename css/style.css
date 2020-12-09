@@ -2,6 +2,15 @@
     box-sizing: border-box;
 }
 
+.btn{
+    border: 1px solid rgb(10, 69, 88);
+    color: rgb(10, 69, 88);
+}
+.btn:hover{
+    background-color: rgb(10, 69, 88);
+    color: rgb(17, 206, 187);
+    border: 1px solid rgb(17, 206, 187);
+}
 .carousel-item{
     justify-items: center;
     align-items: center;
@@ -41,7 +50,7 @@ body{
 
 }
 .brand{
-    color: rgb(7, 69, 90);
+    color: rgb(10, 69, 88);
 }
 .heading{
     align-content: center;
