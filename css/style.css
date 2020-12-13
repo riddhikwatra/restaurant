@@ -37,8 +37,11 @@ body{
     opacity: 0;
     width: 150px;
     height: inherit;
-    position: relative;
-   top:-230px;  
+    position: absolute;
+   top:50%;
+   left: 50%;
+   color: rgb(8, 57, 73);
+   transform: translate(-50%,-50%);  
 }
 
 .outer-container{
@@ -66,19 +69,26 @@ body{
     height: 400px;
 }
 .image{
-    height: 230px;
-    width: 220px;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
 }
 
 .next:hover{
     background-color: rgb(17, 206, 187);
 }
-
+.item{
+    position: relative;
+}
 
 .item:hover .image{
-    opacity: 0.5;
+    opacity: 0.4;
 }
 .item:hover .text{
+    opacity: 1;
+}
+
+.item:hover .button{
     opacity: 1;
 }
 .menu{
@@ -111,4 +121,45 @@ body{
 }
 .category{
     color: rgb(7, 69, 90);
+}
+.button{
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    opacity: 0;
+    border-radius: 5px;
+    border: 1px solid rgb(7, 69, 90);
+    color: rgb(7, 69, 90);
+    background-color: white;
+    padding: 0px 5px 0px 5px;
+}
+.button:hover{
+    background-color:rgb(17, 206, 187); 
+}
+.offers{
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.off{
+    border: 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.dis{
+    width: 200px;
+    height: 200px;
+    padding: 0px 0px 0px 0px;
+    opacity: 0.7;
+    border-radius: 10px;
+}
+.text-offer{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+h2{
+    color: rgb(2, 35, 46);
 }
