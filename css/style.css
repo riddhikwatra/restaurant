@@ -34,14 +34,17 @@ body{
 }
 .text{
     font-weight: bold;
-    opacity: 0;
-    width: 150px;
+    width: 200px;
     height: inherit;
-    position: absolute;
-   top:50%;
-   left: 50%;
-   color: rgb(8, 57, 73);
-   transform: translate(-50%,-50%);  
+    position: relative;
+    color: rgb(8, 57, 73);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 110px;
+    padding: 5px 5px 5px 5px;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .outer-container{
@@ -71,7 +74,7 @@ body{
 .image{
     height: 200px;
     width: 200px;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .next:hover{
@@ -79,14 +82,18 @@ body{
 }
 .item{
     position: relative;
+    border: 1px solid rgb(17, 206, 187);
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px 0px 0px;
+    margin: 10px;
+    border-radius: 10px;
 }
 
 .item:hover .image{
     opacity: 0.4;
 }
-.item:hover .text{
-    opacity: 1;
-}
+
 
 .item:hover .button{
     opacity: 1;
@@ -124,8 +131,9 @@ body{
 }
 .button{
     position: absolute;
-    top: 80%;
-    left: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     opacity: 0;
     border-radius: 5px;
     border: 1px solid rgb(7, 69, 90);
@@ -145,6 +153,7 @@ body{
 .off{
     border: 0px;
     padding: 0px 0px 0px 0px;
+    border-radius: 10px;
 }
 
 .dis{
@@ -161,5 +170,5 @@ body{
     transform: translate(-50%,-50%);
 }
 h2{
-    color: rgb(2, 35, 46);
+    color: rgb(6, 56, 73);
 }
